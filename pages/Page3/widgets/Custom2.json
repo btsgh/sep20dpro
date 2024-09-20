@@ -1,0 +1,65 @@
+{
+  "bottomRow": 10,
+  "defaultModel": "{\n  \"name\": \"{{Table1.selectedRow.Folks}}\"\n}",
+  "displayName": "Custom",
+  "dynamicBindingPathList": [
+    {
+      "key": "theme"
+    },
+    {
+      "key": "defaultModel"
+    }
+  ],
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onButtonClick"
+    }
+  ],
+  "events": [
+    "onResetClick",
+    "onButtonClick"
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.867bcc8399fa3f897d425d72690b86e4.svg",
+  "isCanvas": false,
+  "isDeprecated": false,
+  "isLoading": false,
+  "isSearchWildcard": true,
+  "isVisible": true,
+  "key": "v7nl6krevp",
+  "leftColumn": 11,
+  "mobileBottomRow": 73,
+  "mobileLeftColumn": 25,
+  "mobileRightColumn": 45,
+  "mobileTopRow": 43,
+  "onButtonClick": "{{showAlert('Button has been clicked!!', '');}}",
+  "onResetClick": "{{showAlert('Successfully reset!!', '');}}",
+  "parentColumnSpace": 11.796875,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 31,
+  "searchTags": [
+    "external"
+  ],
+  "srcDoc": {
+    "css": "/* Add some basic styling for the button widget */\n.button-widget {\n    text-align: center;\n    margin: 20px;\n}\n\n#myButton {\n    padding: 10px 20px;\n    font-size: 16px;\n    font-weight: bold;\n    text-align: center;\n    text-decoration: none;\n    background-color: #3498db; /* Change the color to your preference */\n    color: #fff;\n    border: 1px solid #2980b9; /* Change the color to your preference */\n    border-radius: 5px;\n    cursor: pointer;\n}\n\n#myButton:hover {\n    background-color: #2980b9; /* Change the color to your preference */\n}\n\n\n\n\n\n\n\n\n\n",
+    "html": "<div class=\"button-widget\" id=\"myButtonWidget\">\n\t\t\t\t\t<button id=\"myButton\">Click me</button>\n</div>\n\n",
+    "js": "appsmith.onReady(() => {\n  const button = document.getElementById(\"myButton\");\n  button.innerHTML = appsmith.model.name;\n  button.addEventListener(\"click\", () => {\n    appsmith.triggerEvent(\"onButtonClick\");\n  });\n});"
+  },
+  "tags": [
+    "Display"
+  ],
+  "theme": "{{appsmith.theme}}",
+  "topRow": 3,
+  "type": "CUSTOM_WIDGET",
+  "uncompiledSrcDoc": {
+    "css": "/* Add some basic styling for the button widget */\n.button-widget {\n    text-align: center;\n    margin: 20px;\n}\n\n#myButton {\n    padding: 10px 20px;\n    font-size: 16px;\n    font-weight: bold;\n    text-align: center;\n    text-decoration: none;\n    background-color: #3498db; /* Change the color to your preference */\n    color: #fff;\n    border: 1px solid #2980b9; /* Change the color to your preference */\n    border-radius: 5px;\n    cursor: pointer;\n}\n\n#myButton:hover {\n    background-color: #2980b9; /* Change the color to your preference */\n}\n\n\n\n\n\n\n\n\n\n",
+    "html": "<div class=\"button-widget\" id=\"myButtonWidget\">\n\t\t\t\t\t<button id=\"myButton\">Click me</button>\n</div>\n\n",
+    "js": "\nappsmith.onReady(() => {\n\nconst button = document.getElementById (\"myButton\");\nbutton.innerHTML = appsmith.model.name\nbutton.addEventListener\t(\"click\", () => {\n    appsmith.triggerEvent(\"onButtonClick\");\n});\n\n})"
+  },
+  "version": 1,
+  "widgetId": "u024swmxjm",
+  "widgetName": "Custom2"
+}
