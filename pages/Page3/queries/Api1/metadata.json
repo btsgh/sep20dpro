@@ -75,10 +75,10 @@
       "pluginId": "google-sheets-plugin"
     },
     "dynamicBindingPathList": [],
-    "executeOnLoad": true,
     "fullyQualifiedName": "Api1",
     "name": "Api1",
     "pageId": "Page3",
+    "runBehaviour": "ON_PAGE_LOAD",
     "userSetOnLoad": false
   }
 }

@@ -66,9 +66,9 @@
         "key": "formData.insert.documents.data"
       }
     ],
-    "executeOnLoad": false,
     "name": "Insert_movies1",
     "pageId": "Page1",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

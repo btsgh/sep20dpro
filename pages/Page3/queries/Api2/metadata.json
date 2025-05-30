@@ -17,9 +17,9 @@
       "pluginId": "airtable-plugin"
     },
     "dynamicBindingPathList": [],
-    "executeOnLoad": true,
     "name": "Api2",
     "pageId": "Page3",
+    "runBehaviour": "ON_PAGE_LOAD",
     "userSetOnLoad": false
   }
 }
